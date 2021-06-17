@@ -306,10 +306,13 @@ a:focus {
 }
 
 .main-content {
-  height: 110vh;
+  height: 90vh;
   overflow-y: scroll;
   font-size: 1.8rem;
+  transition: 3s;
 }
+
+/* hero section */
 
 .hero-section {
   display: flex;
@@ -341,4 +344,87 @@ a:focus {
   color: #fff;
   font-size: 1.8rem;
   margin-bottom: 9rem;
+}
+
+/* how it works section */
+
+.how-it-works {
+  padding: 3.2rem 13.2rem;
+  padding-bottom: 11.7rem;
+  font-size: 2.2rem;
+}
+
+.how-it-works-text {
+  margin-bottom: 5.6rem;
+  font-size: 2.4rem;
+  padding: 0 1.8rem;
+}
+
+.works-text-svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.how-it-works-options-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-options {
+  width: 20%;
+}
+.fnl-works-options {
+  width: 17%;
+}
+
+.works-options-svg {
+  display: block;
+  margin: auto;
+  height: 16rem;
+}
+
+.works-option-text {
+  margin-top: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+/* our core services */
+
+.core-services-container {
+  background: rgba(17, 37, 85, 1);
+  padding: 8rem 10.2rem 14rem 10.2rem ;
+}
+
+.core-services-header {
+  color: #fff;
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 7.4rem;
+}
+
+.services-options-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-options {
+  width: 31%;
+  background: #fff;
+  padding: 4rem 3.2rem;
+  border-radius: .8rem;
+}
+
+.services-options-header {
+  font-size: 2.4rem;
+}
+
+.services-options-text {
+  text-align: justify;
+}
+
+/* choose us conatiner */
+
+.choose-us-container {
+  padding: 2.9rem 9.8rem ;
 }
