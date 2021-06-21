@@ -44,6 +44,10 @@ body {
   display: none !important;
 }
 
+.btn:hover {
+  color: inherit !important;
+}
+
 /********************
 
     reuseable
@@ -243,7 +247,7 @@ a:focus {
   top: 0;
   height: 7.2rem;
   background: #fff;
-  padding: 0 17.7rem;
+  padding: 0 15.5rem;
   border-bottom: 0.03rem solid rgba(17, 37, 85, 0.1);
 }
 
@@ -432,9 +436,7 @@ a:focus {
 }
 
 .choose-us-svg {
-  position: absolute;
-  z-index: 1;
-  top: 0;
+  position: relative;
 }
 
 .choose-us-options-container {
@@ -475,13 +477,13 @@ a:focus {
 /* explore plans */
 
 .explore-plans-container {
-  padding: 8rem 12rem;
+  padding: 8rem 12rem 2.3rem 12rem;
   font-size: 2.4rem;
 }
 
-/* .explore-container {
-  
-} */
+.explore-container {
+  margin-bottom: 5.6rem;
+}
 
 .explore-text {
   font-size: 3.6rem;
@@ -499,14 +501,241 @@ a:focus {
 
 .pay-ayg-btn {
   background: rgba(17, 37, 85, 1);
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-radius: 1rem 0 0 1rem ;
   padding: 3rem 4.5rem;
 }
 
 .capitation-btn {
   background: rgba(188, 188, 188, 1);
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-radius: 0 1rem 1rem 0 ;
   padding: 3rem 6.1rem;
+}
+
+.payg-container {
+  padding: 5rem 3.5rem ;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 .6rem 4.0rem rgba(0, 0, 0, 0.06);
+}
+
+.payg-content {
+  width: 50%;
+}
+
+.payg-header {
+  font-size: 3.2rem;
+  margin-bottom: 2.8rem;
+}
+
+.payg-text {
+  margin-bottom: 5rem;
+}
+
+.payg-benefits-header {
+  margin-bottom: 7.1rem ;
+}
+
+.payg-benefits {
+  font-weight: 700;
+  margin-bottom: 1.7rem;
+}
+
+.payg-get-started-btn {
+  font-size: 1.8rem;
+  padding: 2.25rem 5.4rem ;
+  background: rgba(15, 130, 192, 1);
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.payg-img-container {
+  width: 48rem;
+  height: 70rem;
+  clip-path: inset();
+  background: grey;
+}
+
+/* price plans */
+
+.price-plans-container {
+  padding: 2.4rem 16rem 15rem 16rem ;
+  font-size: 1.8rem;
+}
+
+.price-plans-header {
+  font-size: 3.2rem;
+  margin-bottom: 7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subscriptions-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscriptions-package {
+  /* width: 22%;   */
+  font-weight: 700;
+}
+
+.subscriptions-package .package-header {
+  background: rgba(17, 37, 85, 1);
+  padding: 2rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.package-header .package-level {
+  margin-bottom: 1.8rem;
+}
+
+.subscriptions-package .package-content {
+  background: rgba(255, 255, 255, 1);
+  padding: 4rem 1.45rem 2.5rem 1.45rem;
+  border-radius: 0 0 1.5rem 1.5rem ;
+  box-shadow: 0 .1rem .4rem rgba(0, 0, 0, 0.1);  
+}
+
+.package-benefits-container {
+  padding: 0 2rem 1.6rem 2rem;
+}
+
+.package-benefits {
+  margin-bottom: 2.4rem;
+}
+
+.buy-package-btn {
+  background: rgba(15, 130, 192, 1);
+  color: #fff;
+  padding: 1.3rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+/* set appointment */
+
+.set-appointment-container {
+  padding: .6rem 7.5rem 11.2rem 7.5rem ;
+  position: relative;
+  font-size: 1.8rem;
+}
+
+.set-appointment {
+  padding: 12.9rem 11.2rem 0 11.2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.set-appointment-svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+.set-appointment .appointment-header{
+  justify-content: center;
+}
+
+.book-an-appointment-btn,
+.find-a-hospital-btn,
+.find-a-clinic-btn {
+  width: 31.4rem;
+  font-size: 2.4rem;
+  padding: 2.3rem 0 1.5rem 0;
+  text-align: center;
+  background: rgba(188, 188, 188, 1);
+  color: #fff;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.book-an-appointment-btn:focus,
+.find-a-hospital-btn:focus,
+.find-a-clinic-btn:focus {
+  background: rgba(17, 37, 85, 1);
+}
+
+.set-appointment .appointment-content {
+  padding: 7rem 4rem ;
+  background: rgba(244, 243, 243, 1);
+  border-radius: .5rem ;
+}
+
+.specialist-dropdown,
+.set-schedule-dropdown,
+.search-appointment-btn {
+  padding: 2.5rem;
+  border-radius: .5rem ;  
+}
+
+.specialist-dropdown,
+.set-schedule-dropdown {  
+  background: rgba(220, 219, 219, 1);
+  width: 32%;
+}
+
+.search-appointment-btn {
+  background: rgba(15, 130, 192, 1);
+  color: #fff;
+  padding: 2.5rem 12.1rem ;
+}
+
+/* register as a practitioner */
+
+.practitioner-register-container {
+  padding: 8rem;
+  font-size: 2.4rem;
+  background: rgba(17, 37, 85, 1);
+  color: #fff;
+}
+
+.practitioner-register {
+  text-align: center;
+}
+
+.practitioner-register .register-header {
+  font-size: 6.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.practitioner-register .register-text {
+  margin-bottom: 3.7rem;
+}
+
+.practitioner-register-btn {
+  background: rgba(15, 130, 192, 1);
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 1.8rem 6rem ;
+  border-radius: 1rem;
+}
+
+/* footer */
+
+.footer {
+  padding: 7rem 7.5rem 3rem 7.5rem ;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.footer-content {
+  margin-bottom: 14.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo-container {
+  width: 29.7rem;
+  height: 16.6rem;
+}
+
+.links-header {
+  font-size: 2.2rem;
+  margin-bottom: 1.7rem;
+  padding-right: 7rem;
+}
+
+.footer-links {
+  margin-bottom: 2.6rem;
 }
