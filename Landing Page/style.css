@@ -54,6 +54,17 @@ body {
                 
 *********************/
 
+.custom-btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .w-5 {
   width: 5%;
 }
@@ -457,16 +468,16 @@ a:focus {
 
 .choose-us-options {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .choose-us-options-text-container {
-  width: 23%; 
+  width: 23%;
   font-size: 2.4rem;
   border-radius: 0.8rem;
   padding: 2.4rem;
   background: #fff;
-  box-shadow: 0 1rem 2rem rgba(41, 41, 42, 0.07);  
+  box-shadow: 0 1rem 2rem rgba(41, 41, 42, 0.07);
 }
 
 .choose-us-options-text {
@@ -501,21 +512,21 @@ a:focus {
 
 .pay-ayg-btn {
   background: rgba(17, 37, 85, 1);
-  border-radius: 1rem 0 0 1rem ;
+  border-radius: 1rem 0 0 1rem;
   padding: 3rem 4.5rem;
 }
 
 .capitation-btn {
   background: rgba(188, 188, 188, 1);
-  border-radius: 0 1rem 1rem 0 ;
+  border-radius: 0 1rem 1rem 0;
   padding: 3rem 6.1rem;
 }
 
 .payg-container {
-  padding: 5rem 3.5rem ;
+  padding: 5rem 3.5rem;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 .6rem 4.0rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.6rem 4rem rgba(0, 0, 0, 0.06);
 }
 
 .payg-content {
@@ -532,7 +543,7 @@ a:focus {
 }
 
 .payg-benefits-header {
-  margin-bottom: 7.1rem ;
+  margin-bottom: 7.1rem;
 }
 
 .payg-benefits {
@@ -542,7 +553,7 @@ a:focus {
 
 .payg-get-started-btn {
   font-size: 1.8rem;
-  padding: 2.25rem 5.4rem ;
+  padding: 2.25rem 5.4rem;
   background: rgba(15, 130, 192, 1);
   color: #fff;
   border-radius: 1rem;
@@ -558,7 +569,7 @@ a:focus {
 /* price plans */
 
 .price-plans-container {
-  padding: 2.4rem 16rem 15rem 16rem ;
+  padding: 2.4rem 16rem 15rem 16rem;
   font-size: 1.8rem;
 }
 
@@ -594,8 +605,8 @@ a:focus {
 .subscriptions-package .package-content {
   background: rgba(255, 255, 255, 1);
   padding: 4rem 1.45rem 2.5rem 1.45rem;
-  border-radius: 0 0 1.5rem 1.5rem ;
-  box-shadow: 0 .1rem .4rem rgba(0, 0, 0, 0.1);  
+  border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
 .package-benefits-container {
@@ -617,7 +628,7 @@ a:focus {
 /* set appointment */
 
 .set-appointment-container {
-  padding: .6rem 7.5rem 11.2rem 7.5rem ;
+  padding: 0.6rem 7.5rem 11.2rem 7.5rem;
   position: relative;
   font-size: 1.8rem;
 }
@@ -634,7 +645,7 @@ a:focus {
   top: 0;
 }
 
-.set-appointment .appointment-header{
+.set-appointment .appointment-header {
   justify-content: center;
 }
 
@@ -647,7 +658,7 @@ a:focus {
   text-align: center;
   background: rgba(188, 188, 188, 1);
   color: #fff;
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .book-an-appointment-btn:focus,
@@ -657,20 +668,20 @@ a:focus {
 }
 
 .set-appointment .appointment-content {
-  padding: 7rem 4rem ;
+  padding: 7rem 4rem;
   background: rgba(244, 243, 243, 1);
-  border-radius: .5rem ;
+  border-radius: 0.5rem;
 }
 
 .specialist-dropdown,
 .set-schedule-dropdown,
 .search-appointment-btn {
   padding: 2.5rem;
-  border-radius: .5rem ;  
+  border-radius: 0.5rem;
 }
 
 .specialist-dropdown,
-.set-schedule-dropdown {  
+.set-schedule-dropdown {
   background: rgba(220, 219, 219, 1);
   width: 32%;
 }
@@ -678,7 +689,7 @@ a:focus {
 .search-appointment-btn {
   background: rgba(15, 130, 192, 1);
   color: #fff;
-  padding: 2.5rem 12.1rem ;
+  padding: 2.5rem 12.1rem;
 }
 
 /* register as a practitioner */
@@ -707,14 +718,14 @@ a:focus {
   background: rgba(15, 130, 192, 1);
   color: #fff;
   font-size: 2.4rem;
-  padding: 1.8rem 6rem ;
+  padding: 1.8rem 6rem;
   border-radius: 1rem;
 }
 
 /* footer */
 
 .footer {
-  padding: 7rem 7.5rem 3rem 7.5rem ;
+  padding: 7rem 7.5rem 3rem 7.5rem;
   font-size: 1.6rem;
   font-weight: 500;
 }
