@@ -250,6 +250,11 @@ a:focus {
 .dropdown-menu {
   font-size: 1.4rem;
 }
+/* patient-admin-wrapper */
+
+/* .patient-admin-wrapper {
+  display: flex;
+} */
 
 /* side bar */
 
@@ -305,7 +310,7 @@ a:focus {
 
 .medication_tab-menu {
   height: 3.4rem;
-  width: 3.2rem;
+  width: 3.4rem;
 }
 
 .exit_tab-menu {
@@ -323,35 +328,81 @@ a:focus {
 /* content section */
 
 .content-section {
-  margin-left: 10rem;
+  padding-left: 10rem;
   width: 100vw;
   height: 100vh;
-  /* position: fixed; */
 }
 
 /* nav bar */
 
 .navbar-container {
+  position: fixed;
   width: 100%;
   height: 7.2rem;
-  background: red;
-  position: fixed;
+  box-shadow: 0 0.2rem 0 rgba(229, 233, 242, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  width: 90vw;
+  font-size: 1.6rem;
+}
+
+/* .navbar_page-title {
+  margin: ;
+} */
+
+.patients-profile .profile-img {
+  width: 4rem;
+  height: 4rem;
+  clip-path: circle();
+  background: grey;
+}
+
+.patients-profile .profile-name {
+  font-size: 1.8rem;
+  color: rgba(15, 130, 192, 1);
+  font-weight: 700;
 }
 
 /* main content */
 
 .main-content-container {
   width: 100%;
-  position: fixed;
-  top: 7.2rem;
+  /* position: fixed; */
+  padding-top: 7.2rem;
   height: 100vh;
   overflow: hidden;
-  background: green;
 }
 
 .main-content {
-  height: 92vh;
+  height: 93vh;
   overflow-y: scroll;
   font-size: 1.8rem;
   transition: 3s;
+  padding: 2.6rem 6.7rem 2.6rem 3rem;
+}
+
+.grey-background {
+  background: rgba(245, 245, 245, 0.72);
+  border-radius: 1.2rem;
+}
+
+.doctors .doctors-img {
+  width: 9.2rem;
+  height: 9.2rem;
+  clip-path: circle();
+  background: grey;
+}
+
+.addfav-btn {
+  width: 2rem;
+  height: 1.8rem;
+}
+
+.ratings-stars {
+  width: 10.3;
+  height: 1.4rem;
 }
