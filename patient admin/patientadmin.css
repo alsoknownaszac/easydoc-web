@@ -12,7 +12,7 @@
 }
 
 html {
-  font-size: 45%;
+  font-size: 60%;
 }
 
 body {
@@ -270,18 +270,27 @@ a:focus {
   font-weight: 700;
   font-size: 1.4rem;
   text-align: center;
-  margin-bottom: 3.5rem;
+  /* margin-bottom: 3rem; */
   padding: 2.1rem 1.5rem;
   color: #fff;
 }
 
+.side-nav_tab-menu-container {
+  height: 78vh;
+  overflow: hidden;
+}
+
 .side-nav_tab-menu {
-  margin-bottom: 14.5rem;
+  padding-top: 3rem;
+  height: 70vh;
+  overflow-y: scroll;
+  transition: 2s;
+  margin-bottom: 16rem;
 }
 
 .tab-menu {
   padding: 1.75rem 0;
-  margin-bottom: 5rem;
+  margin-bottom: 4.5rem;
   text-align: center;
 }
 
@@ -382,19 +391,42 @@ a:focus {
   overflow-y: scroll;
   font-size: 1.8rem;
   transition: 3s;
+}
+
+/********************************
+     ****           ****
+          dashboard
+     ****           ****
+********************************/
+
+/****                   ****/
+/***** dashboard *****/
+/****                   ****/
+
+.dashboard-container {
   padding: 2.6rem 6.7rem 2.6rem 3rem;
 }
+
+/* avaliable doctors */
 
 .grey-background {
   background: rgba(245, 245, 245, 0.72);
   border-radius: 1.2rem;
 }
 
-.doctors .doctors-img {
-  width: 9.2rem;
-  height: 9.2rem;
+.doctors-profile-img {
   clip-path: circle();
   background: grey;
+}
+
+.doctors .doctors-profile-img {
+  width: 9.2rem;
+  height: 9.2rem;
+}
+
+.individual-appointment .doctors-profile-img {
+  width: 10rem;
+  height: 10rem;
 }
 
 .addfav-btn {
@@ -405,4 +437,50 @@ a:focus {
 .ratings-stars {
   width: 10.3;
   height: 1.4rem;
+}
+
+.ratings-amount {
+  font-size: 1rem;
+}
+
+/****                    ****/
+/***** docs profile *****/
+/****                    ****/
+
+/* avaliable doctors section */
+
+.avaliable-doctors-section {
+  width: 41.5rem;
+  height: 100vh;
+  padding: 0 0 0 1rem;
+  position: fixed;
+}
+
+.avaliable-doctors_list-container {
+  height: 75vh;
+  overflow: hidden;
+}
+
+.avaliable-doctors_list {
+  height: 73vh;
+  overflow-y: scroll;
+  transition: all 2s;
+}
+
+.avaliable-doctors-container {
+  background: rgba(249, 249, 249, 1);
+}
+
+.avaliable-doctors .doctors-profile-img {
+  width: 6rem;
+  height: 6rem;
+}
+
+/* view profile section */
+
+.view-profile-section {
+  background: rgb(180, 109, 109);
+  width: 100%;
+  
+  margin-left: 41.5rem;
 }
