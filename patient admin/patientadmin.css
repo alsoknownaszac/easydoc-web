@@ -250,6 +250,10 @@ a:focus {
 .dropdown-menu {
   font-size: 1.4rem;
 }
+
+.list-dot {
+  font-size: 2.5rem;
+}
 /* patient-admin-wrapper */
 
 /* .patient-admin-wrapper {
@@ -449,38 +453,64 @@ a:focus {
 
 /* avaliable doctors section */
 
-.avaliable-doctors-section {
+.avaliable-doctors-section,
+.appointment-doctors-section {
   width: 41.5rem;
   height: 100vh;
   padding: 0 0 0 1rem;
   position: fixed;
 }
 
-.avaliable-doctors_list-container {
+.avaliable-doctors_list-container,
+.appointment-doctors_list-container {
   height: 75vh;
   overflow: hidden;
 }
 
-.avaliable-doctors_list {
+.avaliable-doctors_list,
+.appointment-doctors_list {
   height: 73vh;
   overflow-y: scroll;
   transition: all 2s;
 }
 
-.avaliable-doctors-container {
+.avaliable-doctors-container,
+.appointment-doctors-container {
   background: rgba(249, 249, 249, 1);
 }
 
-.avaliable-doctors .doctors-profile-img {
+.avaliable-doctors .doctors-profile-img,
+.appointment-doctors .doctors-profile-img {
   width: 6rem;
   height: 6rem;
 }
 
 /* view profile section */
 
+.modal,
+select {
+  font-size: 1.8rem !important;
+}
+
 .view-profile-section {
-  background: rgb(180, 109, 109);
+  /* background: rgb(180, 109, 109); */
   width: 100%;
-  
   margin-left: 41.5rem;
+}
+
+.profile-container,
+.about-me-container,
+.consultancy-container,
+.qualifications-container {
+  width: 40rem;
+}
+
+.avaliable-doctors .profile-container,
+.avaliable-doctors .about-me-container {
+  height: 22rem;
+}
+
+.profile-container .doctors-profile-img {
+  width: 12rem;
+  height: 12rem;
 }
