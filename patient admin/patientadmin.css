@@ -418,7 +418,8 @@ a:focus {
   border-radius: 1.2rem;
 }
 
-.doctors-profile-img {
+.doctors-profile-img,
+.patients-profile-img {
   clip-path: circle();
   background: grey;
 }
@@ -513,4 +514,22 @@ select {
 .profile-container .doctors-profile-img {
   width: 12rem;
   height: 12rem;
+}
+
+/****                    ****/
+/***** preferred doctors *****/
+/****                    ****/
+
+.preferred-doc .doctors-profile-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+/****                    ****/
+/***** patient profile*****/
+/****                    ****/
+
+.patients-profile-container .patients-profile-img {
+  width: 10rem;
+  height: 10rem;
 }
