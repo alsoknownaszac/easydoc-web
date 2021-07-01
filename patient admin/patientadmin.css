@@ -173,6 +173,26 @@ body {
   width: 95%;
 }
 
+.h-20 {
+  height: 20%;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.h-15 {
+  height: 15%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.h-85 {
+  height: 85%;
+}
+
 .h-90 {
   height: 90%;
 }
@@ -352,7 +372,7 @@ a:focus {
   position: fixed;
   width: 100%;
   height: 7.2rem;
-  box-shadow: 0 0.2rem 0 rgba(229, 233, 242, 1);
+  box-shadow: 0 0.1rem 0 rgba(229, 233, 242, 1);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -407,7 +427,9 @@ a:focus {
 /***** dashboard *****/
 /****                   ****/
 
-.dashboard-container {
+.dashboard-container,
+.appointment-list-container,
+.price-plan-container {
   padding: 2.6rem 6.7rem 2.6rem 3rem;
 }
 
@@ -532,4 +554,220 @@ select {
 .patients-profile-container .patients-profile-img {
   width: 10rem;
   height: 10rem;
+}
+
+/********************************
+     ****           ****
+          messages
+     ****           ****
+********************************/
+
+/****                    ****/
+/***** messages*****/
+/****                    ****/
+
+.messages-doctors-section {
+  width: 40.5rem;
+  height: 100vh;
+  position: fixed;
+}
+
+.message-tab-section {
+  /* background: rgb(180, 109, 109); */
+  width: 100%;
+  margin-left: 40.5rem;
+  overflow: visible;
+}
+
+.message-tab-menu {
+  background: rgba(255, 255, 255, 1);
+  height: 9.6rem;
+  box-shadow: 0 0.1rem 0 rgba(229, 233, 242, 1);
+}
+
+.tab-menu-profile .doctors-profile-img {
+  width: 7rem;
+  height: 7rem;
+}
+
+/* .message-tab-container {
+  height: 90vh;
+} */
+
+.message-tab {
+  height: 68vh;
+  background: rgba(248, 247, 247, 1);
+  overflow: hidden;
+}
+
+.chat-convo {
+  height: 67vh;
+  overflow-y: scroll;
+  transition: all 2s;
+}
+
+.recievers-chats-container,
+.senders-chats-container {
+  margin-bottom: 1.2rem;
+}
+
+.recievers-chats,
+.senders-chats,
+.type-message {
+  color: white;
+}
+
+.recievers-chats {
+  background: rgba(15, 130, 192, 0.68);
+}
+
+.senders-chats,
+.type-message {
+  background: rgba(17, 37, 85, 0.67);
+}
+
+.compose-message-container {
+  height: 12.3vh;
+  background: rgba(248, 247, 247, 1);
+}
+
+.compose-message {
+  height: 5.4rem;
+}
+
+.type-message {
+  width: 67rem;
+}
+
+/****                    ****/
+/***** video call *****/
+/****                    ****/
+
+/* .video-call-container {
+  
+} */
+
+.recievers-video {
+  background: grey;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.senders-video {
+  width: 13.8rem;
+  height: 17.6rem;
+  position: absolute;
+  top: 5.4vh;
+  right: 13.2vw;
+  border-radius: 1rem;
+  background: red;
+}
+
+.end-call-container {
+  position: absolute;
+  bottom: 5.9vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+/****                    ****/
+/***** voice call *****/
+/****                    ****/
+
+.recievers-img {
+  background: grey;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.recievers-name {
+  position: absolute;
+  top: 7.8vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 3.6rem;
+}
+
+/********************************
+     ****           ****
+          medications
+     ****           ****
+********************************/
+
+.medical-conditon-section {
+  width: 40.5rem;
+  height: 100vh;
+  position: fixed;
+}
+
+.medical-conditon_list-container {
+  height: 75vh;
+  overflow: hidden;
+}
+
+.medical-conditon_list {
+  height: 73vh;
+  overflow-y: scroll;
+  transition: all 2s;
+}
+
+.medical-conditon-container {
+  background: rgba(249, 249, 249, 1);
+}
+
+/* medications description section  */
+
+.medications-list-section {
+  background: rgba(249, 249, 249, 0.7);
+  width: 100%;
+  margin-left: 40.5rem;
+  overflow: visible;
+}
+
+/********************************
+     ****           ****
+          price plan
+     ****           ****
+********************************/
+
+.current-plan-container .current-plan {
+  background: rgba(17, 37, 85, 1);
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.avaliable-plan-container .avaliable-plan {
+  background: rgba(15, 130, 192, 1);
+  color: #fff;
+  border-radius: 1rem;
+}
+
+/*****           ****
+    card deatils
+****           *******/
+
+.add-card-details-container {
+  font-size: 2.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.add-card-details {
+  background: rgba(17, 37, 85, 1);
+  color: #fff;
+  border-radius: 1.5rem;
+}
+
+.card-details-close-btn {
+  position: absolute;
+  top: 14vh;
+  right: 11vw;
+  font-size: 3.5rem;
 }

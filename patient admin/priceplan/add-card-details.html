@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Admin</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../patientadmin.css" />
+  </head>
+  <body>
+    <div class="add-card-details-container w-35 m-auto">
+      <div class="add-card-details_top text-center mb-5">
+        <div class="card-deatils-header">Add Card Details</div>
+        <div class="card-deatils-header-text">
+          Input your card details to make payment for your health care plan
+        </div>
+      </div>
+      <div class="add-card-details p-5 mb-5">
+        <div class="card-no-container mb-4">
+          <div class="card-details-header mb-3">Card Number</div>
+          <input type="text" />
+        </div>
+        <div class="d-flex justify-content-between mb-4">
+          <div class="expiration-date-container mb-4">
+            <div class="card-details-header mb-3">Expiration Date</div>
+            <input type="text" />
+          </div>
+          <div class="cvv-container mb-4">
+            <div class="card-details-header mb-3">CVV</div>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="add-card-details-btn custom-btn">add card details</div>
+      </div>
+      <div class="payg-switch-btn custom-btn text-center">
+        Switch to PayAsYouGo
+      </div>
+    </div>
+    <div class="card-details-close-btn custom-btn">X</div>
+    <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
