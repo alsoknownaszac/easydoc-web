@@ -274,7 +274,12 @@ a:focus {
 .list-dot {
   font-size: 2.5rem;
 }
-/* patient-admin-wrapper */
+
+/************************
+*************************
+** patient-admin-wrapper **
+*************************
+*************************/
 
 /* .patient-admin-wrapper {
   display: flex;
@@ -387,14 +392,16 @@ a:focus {
   margin: ;
 } */
 
-.patients-profile .profile-img {
+.patients-profile .profile-img,
+.doctors-profile .profile-img {
   width: 4rem;
   height: 4rem;
   clip-path: circle();
   background: grey;
 }
 
-.patients-profile .profile-name {
+.patients-profile .profile-name,
+.doctors-profile .profile-name {
   font-size: 1.8rem;
   color: rgba(15, 130, 192, 1);
   font-weight: 700;
@@ -770,4 +777,39 @@ select {
   top: 14vh;
   right: 11vw;
   font-size: 3.5rem;
+}
+
+/************************
+*************************
+**doctors-admin-wrapper **
+*************************
+*************************/
+
+/********************************
+     ****           ****
+          dashboard
+     ****           ****
+********************************/
+
+/* account-overview-n-bookings */
+
+.total-patients-container,
+.total-consultation-container,
+.total-earnings-container {
+  border-radius: 1rem;
+  width: 21.5rem;
+  height: 19.2rem;
+  color: #fff;
+}
+
+.total-patients-container {
+  background: rgba(67, 189, 255, 1);
+}
+
+.total-consultation-container {
+  background: rgba(47, 8, 8, 1);
+}
+
+.total-earnings-container {
+  background: rgba(99, 136, 227, 1);
 }
