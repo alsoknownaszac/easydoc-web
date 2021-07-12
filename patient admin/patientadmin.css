@@ -813,3 +813,11 @@ select {
 .total-earnings-container {
   background: rgba(99, 136, 227, 1);
 }
+
+/* appointment-balance-container  */
+
+.avaliable-balance-container {
+  background: rgba(43, 43, 43, 1);
+  color: #fff;
+  border-radius: 1rem;
+}

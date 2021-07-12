@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Admin</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../patient admin/patientadmin.css" />
+  </head>
+  <body>
+    <!-- <div class="patient-admin-wrapper"> -->
+    <!-- side bar -->
+    <div class="side-nav-container">
+      <div class="side-nav">
+        <div class="side-nav_brand-name">
+          EASYDOC <br />
+          24/7
+        </div>
+        <div class="side-nav_tab-menu-container">
+          <div class="side-nav_tab-menu">
+            <div class="tab-menu">
+              <div class="dashboard_tab-menu">
+                <svg
+                  fill="none"
+                  class="w-100 h-100 text-center"
+                  viewBox="0 0 27 27"
+                >
+                  <defs />
+                  <path
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M22 2a4 4 0 00-4 4v16a4 4 0 104-4H6a4 4 0 104 4V6a4 4 0 10-4 4h16a4 4 0 100-8z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="tab-menu">
+              <div class="profile_tab-menu">
+                <svg
+                  fill="none"
+                  class="w-100 h-100 text-center"
+                  viewBox="0 0 32 32"
+                >
+                  <defs />
+                  <path
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M23 28v-3a5 5 0 00-6-5H7a5 5 0 00-6 5v3M12 15a5 5 0 100-11 5 5 0 000 11zM31 28v-3a5 5 0 00-4-5M21 4a5 5 0 010 11"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="tab-menu">
+              <div class="message_tab-menu">
+                <svg
+                  fill="none"
+                  class="w-100 h-100 text-center"
+                  viewBox="0 0 32 32"
+                >
+                  <defs />
+                  <path
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 5h22l2 3v16l-2 3H5l-2-3V8l2-3z"
+                  />
+                  <path
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M29 8l-13 9L3 8"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="tab-menu">
+              <div class="appointment_tab-menu">
+                <svg
+                  fill="none"
+                  class="w-100 h-100 text-center"
+                  viewBox="0 0 32 32"
+                >
+                  <defs />
+                  <path
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 29a13 13 0 100-26 13 13 0 000 26z"
+                  />
+                  <path
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 8v8l5 3"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="tab-menu">
+              <div class="medication_tab-menu">
+                <svg
+                  fill="none"
+                  class="w-100 h-100 text-center"
+                  viewBox="0 0 32 34"
+                >
+                  <defs />
+                  <path
+                    stroke="#fff"
+                    d="M24 8v0h4a3 3 0 014 3v18s0 0 0 0a3 3 0 01-4 4H4a3 3 0 01-3-4V11h0a3 3 0 013-3h4v0-1a6 6 0 017-6h2a6 6 0 017 6v1zM7 8H4l4-1v1H7zm2-1v1h14v0-1a5 5 0 00-6-6h-2a5 5 0 00-6 6z"
+                  />
+                  <path
+                    fill="#fff"
+                    stroke="#fff"
+                    d="M18 19v0h5v4h-5 0v5h-4v-5 0h0-5v-4h5v0-5h4v5z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="tab-menu">
+              <div class="creditcard_tab-menu">
+                <svg
+                  fill="none"
+                  class="w-100 h-100 text-center"
+                  viewBox="0 0 32 32"
+                >
+                  <defs />
+                  <path
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M28 5H4L1 8v16l3 3h24l3-3V8l-3-3zM1 13h30"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-menu">
+          <div class="exit_tab-menu">
+            <svg
+              fill="none"
+              class="w-100 h-100 text-center"
+              viewBox="0 0 24 24"
+            >
+              <defs />
+              <path
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content section -->
+    <div class="content-section">
+      <!-- nav bar -->
+      <div class="navbar-container">
+        <div class="navbar">
+          <div class="navbar_page-title">Dashboard</div>
+          <div class="navbar_right-section d-flex align-items-center">
+            <div class="search mr-5">search svg</div>
+            <div class="notification mr-5">notification svg</div>
+            <div class="patients-profile d-flex align-items-center">
+              <div class="profile-img mr-3"></div>
+              <div class="profile-name">Katerine kate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main content -->
+      <div class="main-content-container">
+        <div class="main-content">
+          <div class="doctors-profile-container w-60 d-flex">
+            <div class="profile_consultancy-container mt-5 mr-5">
+              <div class="profile-container mb-5 p-3">
+                <div class="d-flex mb-3">
+                  <div class="doctors-profile-img"></div>
+                  <div class="doctors-info">
+                    <div class="name">Dr. Mabel Quins</div>
+                    <div class="profession-field">Dentist</div>
+                    <div class="rating d-flex align-items-center">
+                      <svg
+                        fill="none"
+                        class="ratings-stars"
+                        viewBox="0 0 103 14"
+                      >
+                        <defs />
+                        <path
+                          fill="#F3B310"
+                          stroke="#F3B310"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 1l2 4 4.5.7L10.7 9l.8 4.5-4-2.1-4 2L4.3 9 1 5.7l4.5-.6 2-4.1zM29.5 1l2 4 4.5.7L32.7 9l.8 4.5-4-2.1-4 2 .8-4.4L23 5.7l4.5-.6 2-4.1zM51.5 1l2 4 4.5.7L54.7 9l.8 4.5-4-2.1-4 2 .8-4.4L45 5.7l4.5-.6 2-4.1zM73.5 1l2 4 4.5.7L76.7 9l.8 4.5-4-2.1-4 2 .8-4.4L67 5.7l4.5-.6 2-4.1z"
+                        />
+                        <path
+                          stroke="#F3B310"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M95.5 1l2 4 4.5.7L98.7 9l.8 4.5-4-2.1-4 2 .8-4.4L89 5.7l4.5-.6 2-4.1z"
+                        />
+                      </svg>
+                      <span class="ratings-amount ml-3">4.0</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="d-flex align-items-center">
+                  <div class="message-btn custom-btn mr-4">Message</div>
+                  <div
+                    class="book-appointment-btn custom-btn"
+                    data-toggle="modal"
+                    data-target="#add-conditions-modal"
+                  >
+                    book appointment
+                  </div>
+                </div> -->
+              </div>
+              <div class="consultancy-container p-3">
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="consultancy-header">Consultancy Fee</div>
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    class="custom-btn"
+                    data-toggle="modal"
+                    data-target="#consultancy-fee"
+                  >
+                    <defs />
+                    <path
+                      stroke="#2B2B2B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 20h9M17 4a2 2 0 113 3L7 19l-4 1 1-4L17 4z"
+                    />
+                  </svg>
+                </div>
+                <div class="consultancy-text">N 1200 per session</div>
+                <div class="duration-header mb-3">Duration</div>
+                <div class="duration-time">1 hour</div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="schedule-header">Schedule</div>
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    class="custom-btn"
+                    data-toggle="modal"
+                    data-target="#schedule"
+                  >
+                    <defs />
+                    <path
+                      stroke="#2B2B2B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 20h9M17 4a2 2 0 113 3L7 19l-4 1 1-4L17 4z"
+                    />
+                  </svg>
+                </div>
+                <div class="schedule-duration mb-3">
+                  <div class="schedule-date">Monday - Tuesday</div>
+                  <div class="schedule-time">12pm - 4pm</div>
+                </div>
+                <div class="schedule-duration mb-3">
+                  <div class="schedule-date">Monday - Tuesday</div>
+                  <div class="schedule-time">12pm - 4pm</div>
+                </div>
+                <div class="add-time-btn mt-5 custom-btn">Add New Time</div>
+              </div>
+            </div>
+            <div class="about-me_qualifications-container mt-5">
+              <div class="about-me-container mb-5 p-3">
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="about-me-header">About Me</div>
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    class="custom-btn"
+                    data-toggle="modal"
+                    data-target="#about-me-modal"
+                  >
+                    <defs />
+                    <path
+                      stroke="#2B2B2B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 20h9M17 4a2 2 0 113 3L7 19l-4 1 1-4L17 4z"
+                    />
+                  </svg>
+                </div>
+                <div class="about-me-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </div>
+              </div>
+              <div class="qualifications-container p-3">
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="qualifications-header">Qualifications</div>
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    class="custom-btn"
+                    data-toggle="modal"
+                    data-target="#qualifications-modal"
+                  >
+                    <defs />
+                    <path
+                      stroke="#2B2B2B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 20h9M17 4a2 2 0 113 3L7 19l-4 1 1-4L17 4z"
+                    />
+                  </svg>
+                </div>
+                <div class="qualifications-text mb-5">
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.`
+                  </p>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.`
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="experience-header">Experience</div>
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    class="custom-btn"
+                    data-toggle="modal"
+                    data-target="#experience-modal"
+                  >
+                    <defs />
+                    <path
+                      stroke="#2B2B2B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 20h9M17 4a2 2 0 113 3L7 19l-4 1 1-4L17 4z"
+                    />
+                  </svg>
+                </div>
+                <div class="experience-text">
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.`
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    modals
+     -->
+    <!-- consultancy fee -->
+    <div
+      class="modal fade"
+      id="consultancy-fee"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="add-consultancy-fee-container p-5">
+              <div class="consultancy-fee-container mb-4">
+                <div class="consultancy-fee-header mb-3">
+                  Set Consultancy Fee per session
+                </div>
+                <input type="text" />
+              </div>
+              <div class="set-duration-container mb-4">
+                <div class="set-duration-header mb-3">
+                  Set Duration per session
+                </div>
+                <input type="text" class="mb-5 d-block duration-hour" />
+                <input type="text" class="duration-minutes" />
+              </div>
+              <div class="d-flex align-items-center consult-btns">
+                <div
+                  class="continue-btn custom-btn close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  save
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- schedule -->
+    <div
+      class="modal fade"
+      id="schedule"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="set-schedule-container p-5">
+              <div class="set-avaliable-hours-container mb-4">
+                <div class="set-avaliable-hours-header mb-3">
+                  Set how many hours you’ll be available
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn bg-unset dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Hours
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">2Hours</a>
+                    <a class="dropdown-item" href="#">3Hours</a>
+                    <a class="dropdown-item" href="#">4Hours</a>
+                    <a class="dropdown-item" href="#">5Hours</a>
+                  </div>
+                </div>
+              </div>
+              <div class="set-start-time-container mb-4">
+                <div class="set-start-time-header mb-3">Set start time</div>
+                <input type="text" class="" />
+              </div>
+              <div class="set-end-time-container mb-4">
+                <div class="set-end-time-header mb-3">Set end time</div>
+                <input type="text" class="" />
+              </div>
+              <div class="set-avaliable-days-container mb-4">
+                <div class="set-avaliable-days-header mb-3">
+                  Select days you’ll be available for this time
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn bg-unset dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Days
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Mondays</a>
+                    <a class="dropdown-item" href="#">Tuesdays</a>
+                    <a class="dropdown-item" href="#">Wednesdays</a>
+                    <a class="dropdown-item" href="#">Thursdays</a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center consult-btns">
+                <div
+                  class="continue-btn custom-btn close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  save
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about modal -->
+    <div
+      class="modal fade"
+      id="about-me-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="add-about-me-container p-5">
+              <div class="about-me-container mb-4">
+                <div class="about-me-header mb-3">about-me</div>
+                <input type="text" />
+              </div>
+              <div class="d-flex align-items-center about-me-btns">
+                <div
+                  class="continue-btn custom-btn close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  save
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- qualifications modal -->
+    <div
+      class="modal fade"
+      id="qualifications-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="add-qualifications-container p-5">
+              <div class="qualifications-container mb-4">
+                <div class="qualifications-header mb-3">Qualifications</div>
+                <input type="text" />
+              </div>
+              <div class="d-flex align-items-center qualifications-btns">
+                <div
+                  class="continue-btn custom-btn close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  save
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- experience modal -->
+    <div
+      class="modal fade"
+      id="experience-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="add-experience-container p-5">
+              <div class="experience-container mb-4">
+                <div class="experience-header mb-3">Experience</div>
+                <input type="text" />
+              </div>
+              <div class="d-flex align-items-center experience-btns">
+                <div
+                  class="continue-btn custom-btn close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  save
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- </div> -->
+    <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
