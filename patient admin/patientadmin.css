@@ -448,7 +448,8 @@ a:focus {
 }
 
 .doctors-profile-img,
-.patients-profile-img {
+.patients-profile-img,
+.recievers-profile-img {
   clip-path: circle();
   background: grey;
 }
@@ -540,7 +541,8 @@ select {
   height: 22rem;
 }
 
-.profile-container .doctors-profile-img {
+.profile-container .doctors-profile-img,
+.profile-container .patients-profile-img {
   width: 12rem;
   height: 12rem;
 }
@@ -592,7 +594,7 @@ select {
   box-shadow: 0 0.1rem 0 rgba(229, 233, 242, 1);
 }
 
-.tab-menu-profile .doctors-profile-img {
+.tab-menu-profile .recievers-profile-img {
   width: 7rem;
   height: 7rem;
 }
@@ -833,4 +835,26 @@ select {
 .patients .patients-profile-img {
   width: 10rem;
   height: 10rem;
+}
+
+/* patients details */
+
+.doctors-patients-section {
+  width: 40.5rem;
+  height: 100vh;
+  position: fixed;
+  background: rgb(249, 249, 249, 1);
+}
+
+.patients-details-section {
+  width: 100%;
+  margin-left: 40.5rem;
+  overflow: visible;
+  /* height: ; */
+  overflow: hidden;
+}
+
+.patients-profile-container {
+  height: 80vh;
+  overflow-y: scroll;
 }
