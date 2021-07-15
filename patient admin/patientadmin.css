@@ -821,3 +821,16 @@ select {
   color: #fff;
   border-radius: 1rem;
 }
+
+/********************************
+     ****           ****
+          profile
+     ****           ****
+********************************/
+
+/* all patients profile */
+
+.patients .patients-profile-img {
+  width: 10rem;
+  height: 10rem;
+}
