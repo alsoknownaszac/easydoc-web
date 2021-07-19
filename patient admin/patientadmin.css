@@ -102,7 +102,7 @@ body {
 }
 
 .w-30 {
-  width: 30%;
+  width: 30% !important;
 }
 
 .w-33 {

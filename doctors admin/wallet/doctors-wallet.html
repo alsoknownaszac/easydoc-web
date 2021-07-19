@@ -148,6 +148,7 @@
             </div>
           </div>
         </div>
+
         <div class="tab-menu">
           <div class="exit_tab-menu">
             <svg
@@ -177,7 +178,7 @@
           <div class="navbar_right-section d-flex align-items-center">
             <div class="search mr-5">search svg</div>
             <div class="notification mr-5">notification svg</div>
-            <div class="patients-profile d-flex align-items-center">
+            <div class="doctors-profile d-flex align-items-center">
               <div class="profile-img mr-3"></div>
               <div class="profile-name">Katerine kate</div>
             </div>
@@ -186,166 +187,56 @@
       </div>
       <!-- main content -->
       <div class="main-content-container">
-        <div class="main-content d-flex">
-          <!-- doctors-patients-section -->
-          <div class="doctors-patients-section">
-            <div class="doctors-patients-container w-100 h-100">
-              <div class="doctors-patients_top p-5">
-                <div class="doctors-patients-header mb-3">My Patients</div>
-                <input type="text" />
-              </div>
-              <div class="patients-list-container">
-                <div class="patients-list">
-                  <div class="patients d-flex">
-                    <div class="patients-profile-img"></div>
-                    <div class="patients-info mb-4">
-                      <div class="name">Mabel Quins</div>
-                      <div class="blood-group">AB-</div>
-                      <div class="age">30</div>
-                      <div class="gender">female</div>
+        <div class="main-content">
+          <!-- dashboard -->
+          <div class="wallet-container d-flex justify-content-between p-5">
+            <div class="account-overview-container justify-content-center w-90">
+              <div class="account-overview-container mb-5">
+                <div
+                  class="account-overview d-flex justify-content-between mb-5"
+                >
+                  <div class="total-earnings-container w-30 p-5 h-auto">
+                    <div class="total-earnings-head">Total Earnings</div>
+                    <div class="total-earnings">20,000 NGN</div>
+                  </div>
+                  <div class="total-consultation-container w-30 p-5 h-auto">
+                    <div class="total-consultation-head">
+                      Total Consultation
                     </div>
+                    <div class="total-consultation">200</div>
+                  </div>
+                  <div class="avaliable-balance-container w-30 p-5 h-auto">
+                    <div class="total-patients-head">Balance</div>
+                    <div class="total-patients">10,000.00 NGN</div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- patients-details-section -->
-          <div class="patients-details-section">
-            <div class="patients-profile-container w-70">
-              <div class="profile-container p-5 w-100 d-flex mb-4">
-                <div class="profile-img-container w-40 p-5">
-                  <div class="patients-profile-img"></div>
-                  <div class="patients-info">
-                    <div class="name">Jacob Jones</div>
-                    <div class="d-flex">
-                      <div class="sex-container">
-                        <div class="sex-head">sex</div>
-                        <div class="sex">Male</div>
-                      </div>
-                      <div class="age-container">
-                        <div class="age-head">age</div>
-                        <div class="age">30</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="personal-info w-60 p-5">
-                  <div class="d-flex justify-content-between mb-4">
-                    <div class="personal-info-header">Personal Info</div>
-                    <svg
-                      width="24"
-                      height="24"
-                      fill="none"
-                      class="custom-btn"
-                      data-toggle="modal"
-                      data-target="#personal-info-modal"
-                    >
-                      <defs />
-                      <path
-                        stroke="#2B2B2B"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 20h9M17 4a2 2 0 113 3L7 19l-4 1 1-4L17 4z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="d-flex justify-content-between mb-4">
-                    <div class="height-container d-flex">
-                      <div class="height-head mr-4">Height</div>
-                      <div class="height">143 cm</div>
-                    </div>
-                    <div class="marital-status-container d-flex">
-                      <div class="marital-status-head mr-4">Height</div>
-                      <div class="marital-status">143 cm</div>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between mb-4">
-                    <div class="weight-container d-flex">
-                      <div class="weight-head mr-4">Weight</div>
-                      <div class="weight">70 kg</div>
-                    </div>
-                    <div class="children-status-container d-flex">
-                      <div class="children-status-head mr-4">Children</div>
-                      <div class="children-status">2</div>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="weight-container d-flex">
-                      <div class="weight-head mr-4">Blood Group</div>
-                      <div class="weight">AB-</div>
-                    </div>
-                  </div>
+                <div
+                  class="add-bank-details-btn custom-btn"
+                  data-toggle="modal"
+                  data-target="#add-bank-details-modal"
+                >
+                  add bank details
                 </div>
               </div>
-              <div class="allergies p-5">
-                <div class="d-flex justify-content-between mb-4">
-                  <div class="allergies-header">Allergies</div>
-                  <svg
-                    width="24"
-                    height="24"
-                    fill="none"
-                    class="custom-btn"
-                    data-toggle="modal"
-                    data-target="#allergies-modal"
+              <div class="payment-history-container w-60">
+                <div class="payment-history-header">payment history</div>
+                <hr class="mb-4" />
+                <div class="payment-history p-3">
+                  <div
+                    class="history-header d-flex justify-content-between mb-3"
                   >
-                    <defs />
-                    <path
-                      stroke="#2B2B2B"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 20h9M17 4a2 2 0 113 3L7 19l-4 1 1-4L17 4z"
-                    />
-                  </svg>
-                </div>
-                <p class="allergies-text mb-5">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.`
-                </p>
-                <p class="allergies-text">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.`
-                </p>
-              </div>
-              <div class="health-conditions p-5">
-                <div class="d-flex justify-content-between mb-4">
-                  <div class="health-conditions-header">
-                    Previous Health Conditions
+                    <div class="no w-20">#</div>
+                    <div class="date w-25">date</div>
+                    <div class="reference w-30">reference</div>
+                    <div class="amount w-25">amount</div>
                   </div>
-                  <svg
-                    width="24"
-                    height="24"
-                    fill="none"
-                    class="custom-btn"
-                    data-toggle="modal"
-                    data-target="#health-conditions-modal"
-                  >
-                    <defs />
-                    <path
-                      stroke="#2B2B2B"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 20h9M17 4a2 2 0 113 3L7 19l-4 1 1-4L17 4z"
-                    />
-                  </svg>
+                  <div class="history-row d-flex justify-content-between">
+                    <div class="no w-20">1</div>
+                    <div class="date w-25">15/05/21</div>
+                    <div class="reference w-30">1102593228</div>
+                    <div class="amount w-25">5,000 NGN</div>
+                  </div>
                 </div>
-                <p class="health-conditions">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.`
-                </p>
-              </div>
-            </div>
-            <div class="more-option-btn d-flex align-items-center mt-5">
-              <div class="message-patient-btn custom-btn mr-5">
-                message patient
-              </div>
-              <div class="prescribe-medication-btn custom-btn">
-                prescribe medication
               </div>
             </div>
           </div>
@@ -353,6 +244,52 @@
       </div>
     </div>
 
+    <!--add-bank-details-modal -->
+    <div
+      class="modal fade"
+      id="add-bank-details-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="add-bank-details-container p-5">
+              <div class="add-bank-details-header mb-4">ADD BANK DETAILS</div>
+              <div class="account-number-container mb-4">
+                <input type="text" placeholder="account number" />
+              </div>
+              <div class="add-bank-container mb-4">
+                <select class="custom-select add-bank-select">
+                  <option selected>Bank</option>
+                  <option>U.B.A</option>
+                  <option>First Bank</option>
+                </select>
+              </div>
+              <div class="account-name-container mb-4">
+                <input type="text" placeholder="account number" />
+              </div>
+              <div class="d-flex align-items-center add-prescription-btns">
+                <div
+                  class="cancel-btn custom-btn close mr-3"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  cancel
+                </div>
+                <div
+                  class="continue-btn custom-btn close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  confirm
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- </div> -->
     <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
