@@ -187,84 +187,100 @@
       </div>
       <!-- main content -->
       <div class="main-content-container">
-        <div class="main-content">
-          <!-- dashboard -->
-          <div class="appointment-list-container">
-            <!-- upcoming appointmentts -->
-            <div
-              class="upcoming-appointments-container p-5 grey-background mb-5"
-            >
-              <div
-                class="
-                  header-container
-                  d-flex
-                  align-items-center
-                  justify-content-between
-                  mb-5
-                "
-              >
-                <div class="upcoming-appointments-header">
-                  Bookings
-                </div>
-                <!-- <div class="view-all-btn">view all</div> -->
-                <div class="dropdown">
-                    <div class="view-all-btn custom-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        View all
-                    </div>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">All</a>
-                      <a class="dropdown-item" href="#">Bookings</a>
-                      <a class="dropdown-item" href="#">Upcoming</a>
-                    </div>
-                  </div>
+        <div class="main-content d-flex">
+          <!-- doctors-patients-section -->
+          <div class="doctors-patients-section">
+            <div class="doctors-patients-container w-100 h-100">
+              <div class="doctors-patients_top p-5">
+                <div class="doctors-patients-header mb-3">My Patients</div>
+                <input type="text" />
               </div>
-
-              <div class="upcoming-appointments">
-                <div class="appointments">
-                  <div class="appointments_date mb-3">Today</div>
-                  <div class="individual-appointment d-flex">
+              <div class="patients-list-container">
+                <div class="patients-list">
+                  <div class="patients d-flex">
                     <div class="patients-profile-img"></div>
                     <div class="patients-info">
-                      <div class="name">Dr. Mabel Quins</div>
-                      <div class="appointment-purpose">Check up</div>
-                      <div class="appointment-time">9:30 am - 10:30 am</div>
+                      <div class="doctors-info mb-4">
+                        <div class="name">Mabel Quins</div>
+                        <div class="blood-group">AB-</div>
+                        <div class="age">30</div>
+                        <div class="gender">female</div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="more-option-btn d-flex align-items-center mt-5">
-                    <div class="cancel-bookings custom-btn">cancel</div>
-                    <div class="incomplete-bookings custom-btn">incomplete</div>
-                    <div class="approve-bookings custom-btn">approve</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="upcoming-appointments-container p-5 grey-background">
+          </div>
+          <!-- message-tab section -->
+          <div class="message-tab-section">
+            <div
+              class="
+                message-tab-menu
+                d-flex
+                justify-content-between
+                align-items-center
+                p-3
+              "
+            >
+              <div class="tab-menu-profile d-flex align-items-center">
+                <div class="recievers-profile-img"></div>
+                <div class="recievers-info">
+                  <div class="name">Dr. Mabel Quins</div>
+                  <div class="active-status">Online</div>
+                </div>
+              </div>
+              <div class="tab-menu-options d-flex">
+                <a href="video-call.html"
+                  ><div class="video-call-btn mr-3">video-call</div></a
+                >
+                <a href="voice-call.html"
+                  ><div class="voice-call-btn mr-3">voice-call</div></a
+                >
+                <div class="more-btn">more-btn</div>
+              </div>
+            </div>
+            <div class="message-tab-container">
+              <div class="message-tab p-4 justify-content-between">
+                <div class="chat-convo">
+                  <div class="recievers-chats-container w-48 mr-auto">
+                    <div class="recievers-chats br-3 p-4 mb-1">
+                      Lorem Ipsun est sit aliqua dolor
+                    </div>
+                    <div class="message-delivered-time text-right">6:20pm</div>
+                  </div>
+                  <div class="senders-chats-container w-48 ml-auto">
+                    <div class="senders-chats br-3 p-4 mb-1">
+                      Lorem Ipsun est sit aliqua dolor
+                    </div>
+                    <div class="message-delivered-time">6:20pm</div>
+                  </div>
+                </div>
+              </div>
               <div
                 class="
-                  header-container
+                  compose-message-container
                   d-flex
                   align-items-center
-                  justify-content-between
-                  mb-5
+                  justify-content-center
                 "
               >
-               
-              <div class="upcoming-appointments">
-                <div class="appointments">
-                  <div class="appointments_date mb-3">Monday 12 July, 2021</div>
-                  <div class="individual-appointment d-flex">
-                    <div class="patients-profile-img"></div>
-                    <div class="patients-info">
-                      <div class="name">Dr. Mabel Quins</div>
-                      <div class="appointment-purpose">Check up</div>
-                      <div class="appointment-time">9:30 am - 10:30 am</div>
-                    </div>
-                  </div>
-                  <div class="more-option-btn d-flex align-items-center mt-5">
-                    <div class="cancel-bookings custom-btn">cancel</div>
-                    <div class="incomplete-bookings custom-btn">incomplete</div>
-                    <div class="approve-bookings custom-btn">approve</div>
-                  </div>
+                <div
+                  class="
+                    compose-message
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                    w-80
+                  "
+                >
+                  <div class="emoji-btn">EM</div>
+                  <div class="add-attachment-btn">ATT</div>
+                  <input
+                    type="text"
+                    class="type-message border-none h-100 br-3 p-3"
+                  />
+                  <div class="send-message-btn">SND</div>
                 </div>
               </div>
             </div>
@@ -272,6 +288,7 @@
         </div>
       </div>
     </div>
+
     <!-- </div> -->
     <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>

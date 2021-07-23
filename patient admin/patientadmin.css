@@ -197,6 +197,14 @@ body {
   height: 90%;
 }
 
+.h-unset {
+  height: unset !important;
+}
+
+.vh-90 {
+  height: 90vh !important;
+}
+
 .fw-300 {
   font-weight: 300;
 }
@@ -485,7 +493,8 @@ a:focus {
 /* avaliable doctors section */
 
 .avaliable-doctors-section,
-.appointment-doctors-section {
+.appointment-doctors-section,
+.doctors-request-section {
   width: 41.5rem;
   height: 100vh;
   padding: 0 0 0 1rem;
@@ -493,25 +502,29 @@ a:focus {
 }
 
 .avaliable-doctors_list-container,
-.appointment-doctors_list-container {
+.appointment-doctors_list-container,
+.doctors-request_list-container {
   height: 75vh;
   overflow: hidden;
 }
 
 .avaliable-doctors_list,
-.appointment-doctors_list {
+.appointment-doctors_list,
+.doctors-request_list {
   height: 73vh;
   overflow-y: scroll;
   transition: all 2s;
 }
 
 .avaliable-doctors-container,
-.appointment-doctors-container {
+.appointment-doctors-container,
+.doctors-request-container {
   background: rgba(249, 249, 249, 1);
 }
 
 .avaliable-doctors .doctors-profile-img,
-.appointment-doctors .doctors-profile-img {
+.appointment-doctors .doctors-profile-img,
+.doctors-request .doctors-profile-img {
   width: 6rem;
   height: 6rem;
 }
@@ -525,7 +538,7 @@ select {
 
 .view-profile-section {
   /* background: rgb(180, 109, 109); */
-  width: 100%;
+  /* width: 100%; */
   margin-left: 41.5rem;
 }
 
@@ -857,4 +870,50 @@ select {
 .patients-profile-container {
   height: 80vh;
   overflow-y: scroll;
+}
+
+/************************
+*************************
+** main-admin-wrapper **
+*************************
+*************************/
+
+/********************************
+     ****           ****
+          dashboard
+     ****           ****
+********************************/
+
+.main-admin-account-overview .all-patients-user-container,
+.main-admin-account-overview .all-doctors-user-container,
+.main-admin-account-overview .total-income-container {
+  border-radius: 1rem;
+  width: 21.5rem;
+  height: 19.2rem;
+  color: #fff;
+}
+
+.all-patients-user-container {
+  background: rgba(67, 189, 255, 1);
+}
+
+.all-doctors-user-container {
+  background: rgba(47, 8, 8, 1);
+}
+
+.total-income-container {
+  background: rgba(99, 136, 227, 1);
+}
+
+.new-user .doctors-profile-img,
+.new-user .patients-profile-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* profile  */
+
+.current-plan-members .patients .patients-profile-img {
+  width: 5rem;
+  height: 5rem;
 }
