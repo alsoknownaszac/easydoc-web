@@ -348,7 +348,13 @@
               </div>
               <div>
                 <div class="svg"></div>
-                <div class="pay-doctor-btn">Pay doctor</div>
+                <div
+                  class="pay-doctor-btn custom-btn"
+                  data-toggle="modal"
+                  data-target="#calculate-doctors-payment"
+                >
+                  Pay doctor
+                </div>
               </div>
             </div>
             <div class="account-overview-container d-flex justify-content-end">
@@ -444,10 +450,13 @@
         </div>
       </div>
     </div>
-    <!--Book Appointment Modal -->
+
+    <!-- modals -->
+
+    <!-- calculate-doctors-payment-->
     <div
       class="modal fade"
-      id="add-conditions-modal"
+      id="calculate-doctors-payment"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -455,26 +464,76 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body">
-            <div class="add-conditions-container p-5">
-              <div class="condtions-container mb-4">
-                <div class="conditions-header mb-3">
-                  Tell me about your condition
-                </div>
-                <input type="text" />
+            <div class="calculate-doctors-payment-container p-5">
+              <div class="calculate-doctors-payment-header mb-3">
+                Calculate amount to pay
+                <div class="mt-2">Input the percentage gain of the doctor</div>
               </div>
-              <div class="symptoms-container mb-4">
-                <div class="conditions-header mb-3">
-                  Tell me about your symptoms
+              <div
+                class="
+                  weekly-earning-container
+                  d-flex
+                  justify-content-between
+                  mb-4
+                "
+              >
+                <div class="weekly-earning mb-4">
+                  Earnings for the week
+                  <div class="earning-amount mt-2">NGN 14000</div>
                 </div>
-                <input type="text" />
-              </div>
-              <div class="allergies-container mb-4">
-                <div class="conditions-header mb-3">
-                  Tell me about your allergies (optional)
+                <div class="percentage-gain w-40">
+                  Enter Percentage gain
+                  <input type="text" />
                 </div>
-                <input type="text" />
               </div>
-              <div class="d-flex align-items-center add-conditions-btns">
+              <div
+                class="pay-doctor-container d-flex justify-content-between mb-4"
+              >
+                <div class="pay-doctor mb-4">
+                  Pay doctor
+                  <div class="earning-amount mt-2">NGN 8,400</div>
+                </div>
+                <div class="pay-doctor-btn custom-btn close"
+                data-dismiss="modal"
+                aria-label="Close"
+                data-toggle="modal"
+                data-target="#make-payment-modal"">Make Payment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- make-payment-modal -->
+    <div
+      class="modal fade"
+      id="make-payment-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="make-payment-container p-5">
+              <div class="make-payment-header mb-4">ADD BANK DETAILS</div>
+              <div class="account-number-container mb-4">
+                Account Number
+                <input type="text" placeholder="account number" />
+              </div>
+              <div class="add-bank-container mb-4">
+                Bank
+                <select class="custom-select add-bank-select">
+                  <option selected>Bank</option>
+                  <option>U.B.A</option>
+                  <option>First Bank</option>
+                </select>
+              </div>
+              <div class="enter-payment-amount mb-4">
+                Enter Amount
+                <input type="text" placeholder="N 8,300" />
+              </div>
+              <div class="d-flex align-items-center make-payment-btns">
                 <div
                   class="cancel-btn custom-btn close mr-3"
                   data-dismiss="modal"
@@ -487,9 +546,9 @@
                   data-dismiss="modal"
                   aria-label="Close"
                   data-toggle="modal"
-                  data-target="#consult-details-modal"
+                  data-target="#confirm-payment-modal"
                 >
-                  continue
+                  Proceed to Pay
                 </div>
               </div>
             </div>
@@ -497,64 +556,74 @@
         </div>
       </div>
     </div>
-    <!--Consult Details Modal -->
+
+    <!-- confirm-payment-modal -->
     <div
       class="modal fade"
-      id="consult-details-modal"
+      id="confirm-payment-modal"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body">
-            <div class="consult-details-container p-4">
-              <div class="consult-details-header mb-3">
-                <div class="consultancy-header mb-3">Consultancy Fee</div>
-                <div class="consultancy-text">N 1200 per session</div>
+            <div class="confirm-payment-container p-5">
+              <div class="confirm-payment-header mb-4">
+                Do you want to pay NGN 8,400 to Leslie Alexander
               </div>
-              <div class="sessions-container mb-3">
-                <div class="sessions-group mb-3">
-                  <div class="sessions-header mb-2">Select Sessions</div>
-                  <select class="custom-select sessions-select">
-                    <option selected>Choose...</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                  </select>
+
+              <div class="d-flex align-items-center confirm-payment-btns">
+                <div
+                  class="cancel-btn custom-btn close mr-3"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  No
                 </div>
-                <div class="sessions-group">
-                  <div class="sessions-header mb-2">Select Schedule</div>
-                  <select class="custom-select schedule-date-select mb-3">
-                    <option selected>Day</option>
-                    <option value="1">Monday</option>
-                    <option value="2">Tuesday</option>
-                    <option value="3">Wednesday</option>
-                  </select>
-                  <select class="custom-select schedule-time-select">
-                    <option selected>Time</option>
-                    <option value="1">19:00am</option>
-                    <option value="2">10:00am</option>
-                    <option value="3">11:00am</option>
-                  </select>
+                <div
+                  class="continue-btn custom-btn close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                  data-toggle="modal"
+                  data-target="#successful-transaction-modal"
+                >
+                  Yes
                 </div>
-              </div>
-              <div class="total-fee-container mb-3">
-                <div class="total-fee-header">Total Fee</div>
-                <div class="total-fee-amount">N 2400</div>
-              </div>
-              <div
-                class="book-appointment-btn custom-btn"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                book appointment
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- successful transaction -->
+    <div
+      class="modal fade"
+      id="successful-transaction-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="successful-transaction-container p-5">
+              <div class="successful-transaction-header mb-4">
+                Transaction Successful
+              </div>
+
+              <div
+                class="cancel-btn custom-btn close mr-3"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                close
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- </div> -->
     <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>

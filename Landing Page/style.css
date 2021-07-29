@@ -229,6 +229,14 @@ body {
   border-radius: 1.2rem !important;
 }
 
+.mb-6 {
+  margin-bottom: 5rem;
+}
+
+.mb-7 {
+  margin-bottom: 7.5rem;
+}
+
 a,
 a:hover,
 a:focus {
@@ -313,11 +321,15 @@ a:focus {
 
 /* main content */
 
-.main-content-container {
+.main-content-container,
+.entry-main-content-conatiner {
   position: fixed;
-  top: 7.2rem;
   height: 100vh;
   overflow: hidden;
+}
+
+.main-content-container {
+  top: 7.2rem;
 }
 
 .main-content {
@@ -326,6 +338,129 @@ a:focus {
   font-size: 1.8rem;
   transition: 3s;
 }
+
+/* login and register forms */
+
+/* entry-main-content */
+
+.entry-main-content {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+/* entry- form container */
+
+.entry-form-container {
+  position: relative;
+  padding: 0 17.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* cancel entry form btn */
+
+.cancel-entry-btn {
+  position: absolute;
+  top: 5rem;
+  right: 16rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* cancel entry form btn */
+
+/* entry svg container */
+
+.entry-svg-container {
+  width: 60;
+  height: 70vh;
+}
+
+/* entry- form */
+
+.entry-form {
+  width: 42.2rem;
+}
+
+.form-header-container,
+.hasAccount-container {
+  font-size: 1.6rem;
+}
+
+.form-header-container {
+  margin-bottom: 3rem;
+}
+
+.form-header {
+  font-size: 3.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.form-text {
+  line-height: 2rem;
+}
+
+.entry-input-container {
+  margin-bottom: 3.1rem;
+  display: flex;
+}
+
+.sign-up-form .entry-input-container {
+  justify-content: space-between;
+}
+
+.entry-input,
+.entry-checkbox {
+  background: #ece9e9;
+}
+
+.entry-input {
+  font-size: 1.4rem;
+  height: 6rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  border: none;
+  border-bottom: 0.1rem solid #828282;
+  padding: 0 2rem;
+}
+
+.sign-up-form .entry-input-container .entry-input {
+  width: 20rem;
+}
+
+.entry-checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.38rem;
+  margin-bottom: 3.2rem;
+}
+
+.entry-checkbox {
+  margin-right: 0.7rem;
+}
+
+.entry-register-btn {
+  background: #0f82c0;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.2rem 1rem;
+  border-radius: 0.45rem;
+  width: 100%;
+  margin-bottom: 1.1rem;
+}
+
+.hasAccount-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hasAccount-btn {
+  color: #0f82c0;
+}
+
+/* login and register forms */
 
 /* hero section */
 
@@ -749,4 +884,102 @@ a:focus {
 
 .footer-links {
   margin-bottom: 2.6rem;
+}
+
+/* about page */
+
+/* content container wrapper */
+
+.content-container-wrapper {
+  position: relative;
+  padding: 5rem 13.5rem;
+  margin-top: 1.8rem;
+}
+
+.sm-top-text {
+  color: #0f82c0;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  width: 50%;
+}
+
+/* content container header */
+
+.content-container-header {
+  margin-bottom: 16.2rem;
+  padding: 0 5.6rem;
+  font-weight: 700;
+}
+
+.content-header-text {
+  font-size: 3.6rem;
+  width: 75%;
+}
+
+/* content-container */
+
+.content-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.5rem;
+  margin-bottom: 15.3rem;
+}
+
+.content-info {
+  width: 53%;
+  z-index: 2;
+  font-size: 2.4rem;
+}
+
+.info-header {
+  font-weight: 700;
+  width: 90%;
+  margin-bottom: 2.3rem;
+  line-height: 2.9rem;
+}
+
+.info-text {
+  line-height: 4.05rem;
+}
+
+/* content container svg */
+
+.content-container-svg {
+  position: absolute;
+  z-index: 1;
+}
+
+.content-svg-one,
+.content-svg-two {
+  width: 49.4rem;
+  height: 49.4rem;
+}
+
+.content-svg-one {
+  top: -30rem;
+  right: -2.8rem;
+}
+
+.content-svg-two {
+  top: -6.6rem;
+  left: -9.4rem;
+}
+
+.content-svg-three {
+  width: 34.6rem;
+  height: 34.6rem;
+  top: 6rem;
+  left: 35rem;
+}
+
+/* content container svg */
+
+.content-img-container {
+  clip-path: inset();
+  height: 58.3rem;
+  width: 43rem;
+  background: grey;
+  z-index: 2;
 }

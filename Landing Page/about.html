@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar section -->
+    <div class="nav-bar w-100 d-flex">
+      <div class="nav-bar-content w-100 d-flex">
+        <div class="logo-container">
+          <svg
+            class="logo-svg"
+            width="90"
+            height="50"
+            viewBox="0 0 90 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect width="89.2857" height="50" fill="url(#pattern0)" />
+            <defs>
+              <pattern
+                id="pattern0"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use xlink:href="#image0" transform="scale(0.005 0.00892857)" />
+              </pattern>
+              <image
+                id="image0"
+                width="200"
+                height="112"
+                xlink:href="data:image/png;base64,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"
+              />
+            </defs>
+          </svg>
+        </div>
+        <div class="nav-bar-menu d-flex w-30">
+          <div class="menu-links" tabindex="1">Home</div>
+          <div class="menu-links" tabindex="1">About</div>
+          <div class="menu-links" tabindex="1">Services</div>
+          <div class="menu-links" tabindex="1">Pricing</div>
+          <div class="menu-links" tabindex="1">Contact</div>
+        </div>
+        <div class="nav-bar-btns d-flex">
+          <div class="dropdown mr-3">
+            <div
+              class="btn nav-login-btn br-2 dropdown-toggle caret-off"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Login
+              <svg
+                width="12"
+                height="6"
+                fill="none"
+                class="ml-2"
+                viewBox="0 0 15 8"
+              >
+                <defs />
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2 1l6 6 6-6"
+                />
+              </svg>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">As a Patient</a>
+              <a class="dropdown-item" href="#">As a Doctor</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div
+              class="btn nav-register-btn br-2 dropdown-toggle caret-off"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Register
+              <svg
+                width="12"
+                height="6"
+                fill="none"
+                class="ml-2"
+                viewBox="0 0 15 8"
+              >
+                <defs />
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2 1l6 6 6-6"
+                />
+              </svg>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">As a Patient</a>
+              <a class="dropdown-item" href="#">As a Doctor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main content section -->
+    <div class="main-content-container w-100">
+      <div class="main-content">
+        <!-- content container wrapper -->
+        <div class="content-container-wrapper">
+          <!-- content-container-header -->
+          <div class="content-container-header">
+            <div class="sm-top-text">About Us</div>
+            <div class="content-header-text">
+              EASYDOC24/7 is one of the fast growing 24/7 online doctor consult
+              in Nigeria, providing affordable health care services.
+            </div>
+          </div>
+          <!-- content-one -->
+          <div class="content-container content-one">
+            <div class="content-img-container"></div>
+            <div class="content-info">
+              <div class="info-header">
+                AFFORDABLE HIGH QUALITY HEALTH CARE SERVICES
+              </div>
+              <div class="info-text">
+                We know healthcare can be costly and confusing - and we want to
+                help. We've built a new healthcare experience that connects
+                patients and providers in a way that is delightful and simple.
+                You can get medical care online today for a variety of services
+                and chat with a doctor about your healthcare goals. HeyDoctor,
+                along with our partner health systems, want to be your first
+                stop for healthcare online and your personal medical record.
+              </div>
+            </div>
+            <div class="content-container-svg content-svg-one">
+              <svg fill="none" viewBox="0 0 494 494">
+                <defs />
+                <circle cx="247" cy="247" r="247" fill="#E6EDFE" />
+              </svg>
+            </div>
+          </div>
+          <!-- content-two -->
+          <div class="content-container content-two">
+            <div class="content-info">
+              <div class="sm-top-text">About The CEO</div>
+              <div class="info-header">
+                DR. ODIKPO IKECHUKWU BMBCH, DTM, FIHMN, President / CEO
+              </div>
+              <div class="info-text">
+                <p>
+                  Dr Odikpo Ikechukwu is a trained Medical Doctor, an
+                  experienced Business Man, and Philanthropist. Over the years
+                  he trained and worked in various medical Institutions locally
+                  and internationally acquiring diverse experience for 35 years
+                  in Family, Medicine, Travel Medicine and Aesthetic Medicine,
+                  Obstetrics and Gynecology.
+                  <br />
+                  <br />
+                  Currently he is undertaking the Community Health Workers
+                  Program under edx Harvard University Dr Odikpo Ikechukwu is a
+                  Paul Harris Fellow, an alumnus of The Swiss Tropical
+                  Institute, Basel Switzerland and a member of the Ikoyi Club
+                  1938. Hobby’ enjoys Football, Golf and Conflict resolution.
+                </p>
+              </div>
+            </div>
+            <div class="content-img-container"></div>
+            <div class="content-container-svg content-svg-two">
+              <svg fill="none" viewBox="0 0 494 494">
+                <defs />
+                <circle cx="247" cy="247" r="247" fill="#E6EDFE" />
+              </svg>
+            </div>
+          </div>
+          <!-- content-three -->
+          <div class="content-container content-three">
+            <div class="content-img-container"></div>
+            <div class="content-info">
+              <div class="sm-top-text">
+                About the Vice President /Executive Director Management
+              </div>
+
+              <div class="info-header">MRS ENE CECILIA ODIKPO</div>
+              <div class="info-text">
+                <p>
+                  Mrs Ene Cecilia Odikpo is a trained business manager /
+                  administrator graduated from University of Jos in 1989. Over
+                  the years she has trained and worked at various financial and
+                  medical institutes across Nigeria and overseas, thereby
+                  acquiring diverse experience in office management and
+                  administration.
+                  <br />
+                  <br />
+                  Currently she is back to First City Diagnosis Hospital as
+                  Executive Director fully in charge of the daily administrative
+                  activities of the hospital before joining the husband to start
+                  EasyDoc 247 application. Ene Odikpo is an alumnus of ESUT
+                  business school, a member of the Ikoyi Club 1938, a devoted
+                  christain. She is married with children and hobby is reading
+                  and watching christain movies.
+                </p>
+              </div>
+            </div>
+
+            <div class="content-container-svg content-svg-three">
+              <svg fill="none" viewBox="0 0 494 494">
+                <defs />
+                <circle cx="247" cy="247" r="247" fill="#E6EDFE" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- our core services -->
+        <div class="core-services-container mb-7">
+          <div class="core-services">
+            <div class="core-services-header fw-700">OUR CORE SERVICES</div>
+            <div class="services-options-container">
+              <div class="services-options">
+                <svg
+                  class="services-options-svg mb-5"
+                  width="59"
+                  height="51"
+                  fill="none"
+                >
+                  <defs />
+                  <path
+                    fill="#010B24"
+                    d="M57 11C55 4 47-1 40 0a16 16 0 00-10 8l-2 4-3-4a16 16 0 00-11-5C7 3 1 10 0 17c-1 8 3 15 8 20 6 7 15 12 25 13 8-3 17-12 21-18 4-7 6-14 3-21z"
+                  />
+                  <path
+                    fill="#FAFAFA"
+                    d="M57 24h-1l-2 1-10 1-2 11v1-1l-8-16-2-5-5 12-17 2H3h2l5-1 17-2 5-11v-1 1l3 5 7 16 2-11v-1l10-1h3z"
+                  />
+                </svg>
+                <div class="services-options-header fw-700 mb-4">
+                  Cardiology Service
+                </div>
+                <div class="services-options-text">
+                  Improve your heart's function today! Whatever condition it
+                  might be, we've got you covered. Our world-class cardiologists
+                  are here to serve you.
+                </div>
+              </div>
+              <div class="services-options">
+                <svg
+                  class="services-options-svg mb-4"
+                  width="37"
+                  height="64"
+                  viewBox="0 0 37 64"
+                  fill="none"
+                  xmlns="https://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.26466 51.5443L13.8423 54.7834L11.9798 60.8654C11.7532 61.6054 11.2419 62.225 10.5584 62.5881C9.87495 62.9511 9.07525 63.0277 8.33524 62.8011L3.3192 61.2651C2.5792 61.0385 1.95952 60.5272 1.59649 59.8437C1.23347 59.1602 1.15683 58.3605 1.38343 57.6205L3.24585 51.5386L3.26466 51.5443Z"
+                    fill="#010B24"
+                  />
+                  <path
+                    opacity="0.3"
+                    d="M3.2644 51.5439L13.842 54.783L11.9777 60.8713C11.7521 61.6079 11.2431 62.2248 10.5627 62.5862C9.88224 62.9476 9.08613 63.0239 8.34945 62.7983L3.3334 61.2623C2.96864 61.1506 2.62944 60.9682 2.33519 60.7254C2.04093 60.4826 1.79739 60.1842 1.61844 59.8473C1.4395 59.5104 1.32866 59.1415 1.29227 58.7618C1.25588 58.382 1.29464 57.9989 1.40633 57.6341L3.27068 51.5459L3.2644 51.5439Z"
+                    fill="#010B24"
+                  />
+                  <path
+                    d="M12.1281 60.8653C10.3112 60.4922 8.51967 60.0048 6.76416 59.4061C4.98601 58.9158 3.23951 58.3173 1.53442 57.6138C3.35072 57.992 5.14206 58.4815 6.89832 59.0795C8.67575 59.5695 10.4222 60.1659 12.1281 60.8653Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M4.8568 58.5764C4.90311 58.4092 4.98213 58.2529 5.08926 58.1165C5.1964 57.9801 5.32954 57.8663 5.48096 57.7817C5.63238 57.6971 5.79908 57.6433 5.97141 57.6236C6.14374 57.6039 6.31827 57.6185 6.4849 57.6667L8.60341 58.3419C8.76765 58.3956 8.91967 58.4811 9.05073 58.5937C9.18179 58.7063 9.28932 58.8437 9.36712 58.998C9.44492 59.1523 9.49147 59.3204 9.5041 59.4927C9.51672 59.665 9.49517 59.8381 9.44068 60.0021L4.8568 58.5764Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M13.8723 0.117353L1.62173 48.801C1.3422 49.8283 1.46805 50.9237 1.97328 51.8608C2.47851 52.7979 3.32449 53.505 4.33634 53.836L12.0462 56.202C13.042 56.4864 14.1082 56.3877 15.0349 55.9253C15.9616 55.4628 16.6815 54.6702 17.053 53.7035L36.0212 6.89142L13.8723 0.117353Z"
+                    fill="#010B24"
+                  />
+                  <path
+                    d="M34.4581 10.7467C34.4572 10.8385 29.5781 9.42972 23.6208 7.60447C17.6634 5.77923 12.8512 4.2268 12.8782 4.13524C12.9053 4.04368 17.7582 5.45221 23.7221 7.27751C29.686 9.10282 34.4852 10.6551 34.4581 10.7467Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M14.5781 4.70754C14.6178 4.00492 14.7702 3.31326 15.0297 2.65911C15.184 1.96965 15.4445 1.30835 15.8018 0.698878C15.7665 1.40145 15.6161 2.09346 15.3568 2.74737C15.2055 3.43873 14.9425 4.10081 14.5781 4.70754Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M16.3368 5.24179C16.5196 3.85116 16.9331 2.50077 17.5604 1.24624C17.5207 1.94886 17.3683 2.64052 17.1088 3.29467C16.9547 3.98003 16.6942 4.63703 16.3368 5.24179Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M18.0893 5.78225C18.129 5.07963 18.2815 4.38797 18.5409 3.73382C18.6919 3.04333 18.9525 2.38151 19.3131 1.77358C19.2777 2.47615 19.1274 3.16817 18.868 3.82207C18.7167 4.51344 18.4537 5.17551 18.0893 5.78225Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M19.8487 6.31698C20.0316 4.92635 20.4451 3.57597 21.0724 2.32144C20.8813 3.71027 20.4682 5.05934 19.8487 6.31698Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M21.6011 6.85743C21.6407 6.15481 21.7932 5.46317 22.0527 4.80901C22.2036 4.11852 22.4643 3.45671 22.8248 2.84878C22.7894 3.55135 22.6391 4.24336 22.3797 4.89726C22.2284 5.58862 21.9654 6.2507 21.6011 6.85743Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M23.3602 7.39169C23.543 6.00106 23.9566 4.65067 24.5838 3.39614C24.3928 4.78497 23.9796 6.13405 23.3602 7.39169Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M25.1125 7.93264C25.1522 7.23002 25.3047 6.53836 25.5641 5.88421C25.7151 5.19372 25.9757 4.5319 26.3363 3.92398C26.3009 4.62654 26.1506 5.31856 25.8912 5.97246C25.7399 6.66383 25.4769 7.3259 25.1125 7.93264Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M26.8652 8.46633C26.9088 7.76426 27.0611 7.07321 27.3168 6.4179C27.4667 5.72608 27.7298 5.06377 28.0955 4.45773C28.0519 5.1598 27.8996 5.85084 27.6439 6.50616C27.4941 7.19797 27.231 7.86028 26.8652 8.46633Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M28.6243 9.00686C28.6591 8.30422 28.8095 7.61213 29.0693 6.95837C29.2241 6.26807 29.4869 5.60653 29.848 4.99819C29.8083 5.70081 29.6558 6.39247 29.3964 7.04662C29.2455 7.73711 28.9848 8.39893 28.6243 9.00686Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M30.3766 9.5411C30.5676 8.15227 30.9808 6.8032 31.6002 5.54556C31.4174 6.93619 31.0038 8.28657 30.3766 9.5411Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M32.136 10.0821C32.1708 9.37942 32.3212 8.68733 32.581 8.03356C32.7323 7.3422 32.9953 6.68012 33.3597 6.07339C33.3201 6.77601 33.1676 7.46767 32.9081 8.12182C32.7572 8.81231 32.4965 9.47412 32.136 10.0821Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M33.8885 10.6158C34.0796 9.22698 34.4927 7.87791 35.1121 6.62026C34.9293 8.01089 34.5158 9.36128 33.8885 10.6158Z"
+                    fill="#263238"
+                  />
+                  <path
+                    d="M16.4909 25.651L17.3492 22.8652L20.1023 23.7102L19.3045 26.3194L21.5541 27.0024L20.7158 29.7424L18.2243 28.9851L17.4942 31.3719L15.1924 30.6623L15.9766 28.0988L13.2627 27.2673L14.0064 24.8412L16.4909 25.651Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M23.137 28.8661C23.0977 28.8658 23.2861 28.3429 23.3408 27.3794C23.4081 26.0202 23.0289 24.6764 22.2611 23.5529C21.7386 22.7835 21.038 22.1517 20.2189 21.7111C19.2753 21.2159 18.2119 20.9949 17.1492 21.0731C15.9745 21.1701 14.8558 21.6166 13.9372 22.3551C12.9491 23.1439 12.2223 24.2127 11.8519 25.4216C11.4816 26.6305 11.4851 27.923 11.8619 29.1299C12.2081 30.2535 12.8845 31.2468 13.803 31.9806C14.6412 32.6377 15.6455 33.0487 16.7038 33.168C17.629 33.2626 18.5634 33.134 19.4286 32.793C20.6983 32.2858 21.7648 31.3735 22.4625 30.1977C22.9619 29.3694 23.0913 28.8395 23.1306 28.8529C23.1162 28.9832 23.0841 29.1108 23.0353 29.2324C22.9204 29.5915 22.7678 29.9375 22.5799 30.2644C21.8961 31.4939 20.8175 32.4567 19.5186 32.9971C18.5542 33.3992 17.5003 33.5381 16.4646 33.3996C15.429 33.261 14.4487 32.85 13.6239 32.2085C12.6466 31.4421 11.9245 30.3974 11.5529 29.2123C11.1478 27.9449 11.1379 26.5843 11.5244 25.3112C11.9109 24.038 12.6755 22.9126 13.7168 22.0842C14.6874 21.3069 15.8722 20.8443 17.1127 20.758C18.2314 20.6773 19.3501 20.9149 20.3394 21.4433C21.1904 21.9157 21.9152 22.5858 22.4527 23.3972C23.2203 24.5621 23.5748 25.9509 23.4592 27.3411C23.4294 27.7178 23.3623 28.0907 23.2588 28.4541C23.2401 28.597 23.199 28.736 23.137 28.8661Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="services-options-header fw-700 mb-4">
+                  Dental Care
+                </div>
+                <div class="services-options-text">
+                  Get that extra sparkle in your smile with premium dental care
+                  from our finest dentists. We also have a wide range of
+                  products and services to optimise your oral hygiene.
+                </div>
+              </div>
+              <div class="services-options">
+                <svg
+                  class="services-options-svg mb-4"
+                  width="26"
+                  height="57"
+                  fill="none"
+                >
+                  <defs />
+                  <path
+                    fill="#010B24"
+                    stroke="#010B24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 18V8h15v10l4 5 1 3v30H0V26l1-3 4-5zM5 4h15v2H5V4z"
+                  />
+                  <path
+                    fill="#fff"
+                    stroke="#010B24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2 0h21v4H2V0z"
+                  />
+                  <path
+                    fill="#010B24"
+                    stroke="#010B24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 5h19l1 1v2l-1 1H3L2 8V6l1-1z"
+                  />
+                  <path
+                    fill="#fff"
+                    stroke="#010B24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 28h16v20H9V28z"
+                  />
+                </svg>
+                <div class="services-options-header fw-700 mb-4">
+                  Aesthestic Medince
+                </div>
+                <div class="services-options-text">
+                  Do you wish for a change in your body's appearance? Do you
+                  crave that extra boost in your confidence? We have the best
+                  professionals for the job. Contact us today!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- register as a practitioner -->
+        <div class="practitioner-register-container">
+          <div class="practitioner-register w-90 mx-auto fw-700">
+            <div class="register-header">Are You a Medical Practitioner?</div>
+            <div class="register-text w-90 mx-auto">
+              Connect virtually with your patients and attract new patients
+              while deliverying a premium experiencce experience to your
+              patients
+            </div>
+            <div class="practitioner-register-btn btn fw-700">REGISTER</div>
+          </div>
+        </div>
+        <!-- footer section -->
+        <div class="footer">
+          <div class="footer-content">
+            <div class="footer-logo-container">
+              <img class="w-100 h-100" src="assets/footer-logo.png" alt="" />
+            </div>
+            <div class="health-care-links">
+              <div class="links-header">Health Care Plans</div>
+              <div class="footer-links">Pay As You Go</div>
+              <div class="footer-links">Capitation</div>
+            </div>
+            <div class="quick-links">
+              <div class="links-header">Quick Links</div>
+              <div class="footer-links">Home</div>
+              <div class="footer-links">About</div>
+              <div class="footer-links">Services</div>
+              <div class="footer-links">Pricing</div>
+              <div class="footer-links">Contact</div>
+            </div>
+            <div class="reach-us-links">
+              <div class="links-header">Reach us</div>
+              <div class="footer-links d-flex align-items-center">
+                <svg class="mr-3" width="20" height="18" fill="none">
+                  <defs />
+                  <path
+                    fill="#333"
+                    fill-rule="evenodd"
+                    d="M15 0a5 5 0 015 5v8c0 3-2 5-5 5H5c-3 0-5-2-5-5V5c0-3 2-5 5-5h10zm2 7V6 5h-1l-5 4H9L5 5H4L3 6l1 1 4 3a3 3 0 004 0l5-3z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                hello@easydoc24/7.co
+              </div>
+              <div class="footer-links d-flex align-items-center">
+                <svg class="mr-3" width="14" height="20" fill="none">
+                  <defs />
+                  <path
+                    fill="#333"
+                    fill-rule="evenodd"
+                    d="M0 9V7 6c0-4 2-6 5-6h4c3 0 5 2 5 6a221 221 0 010 8c0 4-2 6-5 6H5c-3 0-5-2-5-6V9zm8 9l-1 1-1-1 1-2 1 2zM2 6v5c0 2 2 4 4 4h2c2 0 4-2 4-4a131 131 0 000-5c0-2-2-4-4-4H6C4 2 2 4 2 6z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                +234 9018457614
+              </div>
+              <div class="footer-links d-flex align-items-center">
+                <svg class="mr-3" width="18" height="20" fill="none">
+                  <defs />
+                  <path
+                    fill="#333"
+                    fill-rule="evenodd"
+                    d="M9 0l6 2 3 6v1l-4 8-4 3H8l-5-5c-2-2-2-4-2-7 0-4 3-8 8-8zm0 11a3 3 0 003-2c0-2-1-3-3-3-1 0-3 1-3 3l3 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Plot 3 Block 19, Jerry Iriabe Street, <br />
+                Lekki Phase 1, Lagos, Nigeria
+              </div>
+            </div>
+          </div>
+          <div class="copyright-text text-center">
+            © 2021 Easydoc24/7. All rights reserved
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of content -->
+    <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
