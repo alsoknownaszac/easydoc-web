@@ -322,7 +322,8 @@ a:focus {
 /* main content */
 
 .main-content-container,
-.entry-main-content-conatiner {
+.entry-main-content-conatiner,
+.contact-main-content-conatiner {
   position: fixed;
   height: 100vh;
   overflow: hidden;
@@ -343,7 +344,8 @@ a:focus {
 
 /* entry-main-content */
 
-.entry-main-content {
+.entry-main-content,
+.contact-main-content {
   padding: 5rem 0;
   display: flex;
   align-items: center;
@@ -351,7 +353,8 @@ a:focus {
 
 /* entry- form container */
 
-.entry-form-container {
+.entry-form-container,
+.contact-container {
   position: relative;
   padding: 0 17.5rem;
   display: flex;
@@ -372,19 +375,53 @@ a:focus {
 
 /* entry svg container */
 
-.entry-svg-container {
-  width: 60;
+.entry-svg-container,
+.contact-svg-container {
   height: 70vh;
+}
+
+/* contact main content */
+
+/* .contact-svg-container {
+  
+} */
+
+.contact-svg-container svg {
+  margin-top: -5rem;
+  height: 60vh;
+  margin-bottom: 3.4rem;
+}
+
+.contactMethod-container {
+  width: 65rem;
+  text-align: center;
+}
+
+.contactMethod-svg {
+  height: 4rem;
+  margin-bottom: 1.9rem;
+}
+
+.contactMethod-svg img {
+  height: 100%;
+}
+
+.contact-method {
+  line-height: 2rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 /* entry- form */
 
-.entry-form {
+.entry-form,
+.contact-form {
   width: 42.2rem;
 }
 
 .form-header-container,
-.hasAccount-container {
+.moreEntryOption-container,
+.contact-method {
   font-size: 1.6rem;
 }
 
@@ -407,8 +444,13 @@ a:focus {
   display: flex;
 }
 
-.sign-up-form .entry-input-container {
+.sign-up-form .entry-input-container,
+.contact-form .entry-input-container {
   justify-content: space-between;
+}
+
+.log-in-form .entry-input-container {
+  justify-content: center;
 }
 
 .entry-input,
@@ -416,8 +458,12 @@ a:focus {
   background: #ece9e9;
 }
 
-.entry-input {
+.entry-input,
+.forgotPassword-btn {
   font-size: 1.4rem;
+}
+
+.entry-input {
   height: 6rem;
   border-radius: 0.4rem 0.4rem 0rem 0rem;
   border: none;
@@ -425,8 +471,13 @@ a:focus {
   padding: 0 2rem;
 }
 
-.sign-up-form .entry-input-container .entry-input {
+.sign-up-form .entry-input-container .entry-input,
+.contact-form .entry-input-container .entry-input {
   width: 20rem;
+}
+
+.log-in-form .entry-input-container .entry-input {
+  width: 42rem;
 }
 
 .entry-checkbox-container {
@@ -440,7 +491,7 @@ a:focus {
   margin-right: 0.7rem;
 }
 
-.entry-register-btn {
+.entry-confirm-btn {
   background: #0f82c0;
   color: #fff;
   font-size: 2rem;
@@ -451,13 +502,27 @@ a:focus {
   margin-bottom: 1.1rem;
 }
 
-.hasAccount-container {
+.contactMessage-btn {
+  font-size: 1.4rem;
+  padding: 1rem;
+  width: fit-content;
+}
+
+.moreEntryOption-container {
   display: flex;
   justify-content: center;
 }
 
-.hasAccount-btn {
+.moreEntryOption-btn,
+.forgotPassword-btn,
+.contact-form-header {
   color: #0f82c0;
+}
+
+.forgotPassword-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2.9rem;
 }
 
 /* login and register forms */
